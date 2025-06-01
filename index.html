@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI/UX Portfolio</title>
+  <link rel="stylesheet" href="kk.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <img src="cypic.jpg" alt="My Profile Picture" class="profile-pic" />
+      <div class="text-content">
+        <h1>Lontoc Cyro</h1>
+        <h2>UI/UX & Web/Graphic Designer</h2>
+      </div>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <div class="box-container">
+      <button onclick="showSection('info')" class="box">Personal Info & Skills</button>
+      <button onclick="showSection('experience')" class="box">Experience & Achievements</button>
+      <button onclick="showSection('projects')" class="box">My Projects</button>
+    </div>
+
+    <!-- Personal Info & Skills -->
+    <div id="info" class="content-section visible">
+      <h2>Personal Info & Skills</h2>
+      <p><strong>Name:</strong> Lontoc Cyro</p>
+      <p><strong>Email:</strong> Ycseol02@gmail.com</p>
+      <p><strong>Location:</strong> Philippines</p>
+      <h3>Skills</h3>
+      <ul>
+        <li>UI/UX Design (Figma, Adobe XD)</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Graphic Design (Photoshop, Illustrator)</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </div>
+
+    <!-- Experience & Achievements -->
+    <div id="experience" class="content-section hidden">
+      <h2>Experience</h2>
+      <ul>
+        <li>2 years as UI/UX Designer at XYZ Studio</li>
+        <li>Freelance Graphic Designer for local brands</li>
+      </ul>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Best Portfolio Design - 2023 UI/UX Meetup</li>
+        <li>Top Rated Freelancer on Upwork</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="content-section hidden">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img class="project-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/52920294/original/09df3b8ecc678ce7e9b6007f87f8d140ee695f1a/design-a-responsive-landing-page.jpg" alt="Portfolio Website Preview" />
+          <h4>Portfolio Website</h4>
+          <p>Personal branding site made with HTML, CSS & JS</p>
+        </div>
+        <div class="project-card">
+          <img class="project-img" src="https://designshack.net/wp-content/uploads/Music-Mobile-App-UX-and-UI-Kit.jpg" alt="Mobile App UI Design" />
+          <h4>Mobile App UI</h4>
+          <p>Designed a finance tracking app interface in Figma</p>
+        </div>
+        <div class="project-card">
+          <img class="project-img" src="https://designshack.net/wp-content/uploads/Outfitr-Free-Fashion-Adobe-XD-UI-Kit-1024x768.jpg" alt="Online Store UI" />
+          <h4>Online Store</h4>
+          <p>Created responsive e-commerce UI using Adobe XD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook Icon" />
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter Icon" />
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png" alt="LinkedIn Icon" />
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

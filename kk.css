@@ -1,0 +1,169 @@
+/* ========== Reset ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Body & General ========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #191970;
+  padding: 20px;
+}
+
+/* ========== Container ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #fff;
+}
+
+.text-content {
+  margin-left: 15px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 18px;
+}
+
+/* ========== Navigation Buttons ========== */
+.box-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  padding: 15px 20px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #005bb5;
+}
+
+/* ========== Content Sections ========== */
+.content-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ========== Projects ========== */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ========== Social Media Links ========== */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-links a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* Section visibility */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
